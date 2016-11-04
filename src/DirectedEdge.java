@@ -1,13 +1,13 @@
 /**
  * Created by laptop on 03.11.2016.
  */
-public class Edge {
+public class DirectedEdge {
     private final int v;
     private final int w;
     private final int weight;
 
 
-    public Edge(int v, int w, int weight) {
+    public DirectedEdge(int v, int w, int weight) {
         this.v = v;
         this.w = w;
         this.weight = weight;
@@ -19,6 +19,10 @@ public class Edge {
 
     public int to() {
         return w;
+    }
+
+    public int getWeight() {
+        return weight;
     }
 
 
